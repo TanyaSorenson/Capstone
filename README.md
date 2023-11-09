@@ -3,6 +3,15 @@
 ## Description
 This was my final project for my BrainStation Data Science bootcamp. I used natural language processing on over a thousand public domain books to examine the gender of characters and the verbs associated with the main characters by gender. I also identified the genders of the authors.
 
+## Methods
+I first joined two different datasets from Kaggle, one containing titles and full text, the other containing, titles, authors, and publication dates. I then isolated the authors' first names and ran the gender guesser function on them to identify male and female authors. After I used spaCy to pull out the characters and their associated verbs. I ran the gender guesser function on the characters' names and counted how many of each gender were in each book, as well as how many were main characters, which I defined as characters appearing at least five times in the book. I then used Tableau to plot and analyze my results.
+
+## Results
+I found that most authors were male, and that most characters were male. This character gender ratio surprisingly held true regardless of the authors’ gender. I also found that whether looking at total characters or main characters, defined as characters who were mentioned at least five times, there were roughly twice as many male characters as female characters in each book. In regards to verbs, I discovered there was not much difference between the male and female characters' verbs. 
+
+## Future Work
+In the future, I may explore the male and female characters' verbs more deeply. Perhaps examining the percentage of verbs or running a logistic regression to see which verbs are most predictive of characters' gender. I could also run a logistic regression to see if any verbs are predictive of authors' gender.
+
 ## Python Packages
 python=3.10.11
 
@@ -33,12 +42,6 @@ The notebook where I explored spaCy on a book I was already familiar with is nam
 The notebook which contains the actual NLP processing that I did on all of the books is named "Hopefully final NLP on all docs.ipynb".
 
 The notebook where I examined the verbs associated with characters is named "Verbs Processing.ipynb".
-
-## Results
-I found that most authors were male, and that most characters were male. This character gender ratio surprisingly held true regardless of the authors’ gender. I also found that whether looking at total characters or main characters, defined as characters who were mentioned at least five times, there were roughly twice as many male characters as female characters in each book. In regards to verbs, I discovered there was not much difference between the male and female characters' verbs. 
-
-## Future Work
-In the future, I may explore the male and female characters' verbs more deeply. Perhaps examining the percentage of verbs or running a logistic regression to see which verbs are most predictive of characters' gender. I could also run a logistic regression to see if any verbs are predictive of authors' gender.
 
 ## License
 MIT License
